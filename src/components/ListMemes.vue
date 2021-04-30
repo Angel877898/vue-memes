@@ -32,7 +32,9 @@ export default {
     });
 
     const changeTotalShow = (e) => {
-      console.log(e.target.value);
+      store.dispatch("getMemes", {
+        total: e.target.value,
+      });
     };
 
     return {
